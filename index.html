@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ульяна — личный сайт</title>
+  <meta name="description" content="Личный сайт Ульяны — обо мне, моих интересах и хобби." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Декоративный фоновый градиент -->
+  <div class="bg-decor" aria-hidden="true">
+    <span class="blob blob--1"></span>
+    <span class="blob blob--2"></span>
+    <span class="blob blob--3"></span>
+  </div>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__dot"></span>
+        <span class="logo__text">Ульяна</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#about" class="nav__link">Обо мне</a>
+        <a href="#interests" class="nav__link">Интересы</a>
+        <a href="#contact" class="nav__link">Контакты</a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Главная -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__eyebrow">Привет, я —</p>
+          <h1 class="hero__title">
+            <span class="accent">Ульяна</span>
+          </h1>
+          <p class="hero__subtitle">
+            Мне 16 лет, я живу в Кишинёве. Добрая, общительная и люблю
+            узнавать что-то новое — здесь немного обо мне и о том,
+            что делает меня собой.
+          </p>
+          <div class="hero__actions">
+            <a href="#about" class="btn btn--primary">Узнать больше</a>
+            <a href="#contact" class="btn btn--ghost">Связаться</a>
+          </div>
+        </div>
+
+        <!-- Декоративная «личная карточка» вместо фото -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="id-card">
+            <div class="id-card__top">
+              <span class="id-card__monogram">У</span>
+              <span class="id-card__status">
+                <span class="id-card__pulse"></span>
+                online
+              </span>
+            </div>
+
+            <div class="id-card__name">
+              <p class="id-card__hello">hello, my name is</p>
+              <h2>Ульяна</h2>
+            </div>
+
+            <ul class="id-card__facts">
+              <li><span>Возраст</span><b>16</b></li>
+              <li><span>Город</span><b>Кишинёв</b></li>
+              <li><span>Настроение</span><b>добрая</b></li>
+            </ul>
+
+            <div class="id-card__tags">
+              <span class="tag">общительная</span>
+              <span class="tag">любознательная</span>
+              <span class="tag">мечтательница</span>
+            </div>
+          </div>
+
+          <!-- Плавающие иконки-хобби вокруг карточки -->
+          <span class="float-icon float-icon--music" title="Музыка">♪</span>
+          <span class="float-icon float-icon--camera" title="Фотография">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8a2 2 0 0 1 2-2h2.5l1.5-2h6l1.5 2H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <circle cx="12" cy="13" r="3.5"/>
+            </svg>
+          </span>
+          <span class="float-icon float-icon--film" title="Фильмы">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="16" rx="2"/>
+              <path d="M3 9h18M3 15h18M8 4v16M16 4v16"/>
+            </svg>
+          </span>
+          <span class="float-icon float-icon--spark" title="Прогулки">✦</span>
+          <span class="float-icon float-icon--heart" title="Доброта">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9z"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">01 — Знакомство</p>
+          <h2 class="section__title">Обо <span class="accent">мне</span></h2>
+          <p class="section__lead">
+            Немного о том, какая я, чем живу и к чему стремлюсь.
+          </p>
+        </header>
+
+        <div class="about">
+          <div class="about__card">
+            <h3>Кратко</h3>
+            <p>
+              Меня зовут Ульяна, мне 16 лет, я живу в Кишинёве.
+              Я добрая, общительная и люблю узнавать что-то новое.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>Чем занимаюсь</h3>
+            <p>
+              Учусь в школе, люблю проводить время с друзьями,
+              слушать музыку и смотреть фильмы. В свободное время
+              интересуюсь модой и фотографией.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>Ценности</h3>
+            <p>
+              Для меня важны честность, поддержка, доброта и уважение
+              к людям. Я ценю настоящую дружбу и семью.
+            </p>
+          </div>
+          <div class="about__card">
+            <h3>Мечта</h3>
+            <p>
+              Мечтаю путешествовать, получить хорошее образование
+              и заниматься любимым делом, которое будет приносить радость.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Интересы / Хобби -->
+    <section class="section section--alt" id="interests">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">02 — Что я люблю</p>
+          <h2 class="section__title">Интересы и <span class="accent">хобби</span></h2>
+          <p class="section__lead">
+            Четыре направления, которые делают мою жизнь интереснее.
+          </p>
+        </header>
+
+        <ul class="interests">
+          <li class="interest">
+            <div class="interest__icon">♪</div>
+            <h3>Музыка</h3>
+            <p>
+              Люблю слушать музыку, потому что она поднимает настроение,
+              помогает расслабиться и развеяться.
+            </p>
+          </li>
+          <li class="interest">
+            <div class="interest__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8a2 2 0 0 1 2-2h2.5l1.5-2h6l1.5 2H19a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                <circle cx="12" cy="13" r="3.5"/>
+              </svg>
+            </div>
+            <h3>Фотография</h3>
+            <p>
+              Мне нравится фотографировать красивые моменты,
+              природу и друзей.
+            </p>
+          </li>
+          <li class="interest">
+            <div class="interest__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <path d="M3 9h18M3 15h18M8 4v16M16 4v16"/>
+              </svg>
+            </div>
+            <h3>Фильмы и сериалы</h3>
+            <p>
+              Люблю смотреть интересные фильмы и сериалы:
+              дорамы, драмы и комедии.
+            </p>
+          </li>
+          <li class="interest">
+            <div class="interest__icon">✦</div>
+            <h3>Прогулки и общение</h3>
+            <p>
+              Нравится проводить время с друзьями, гулять и открывать
+              для себя новые места — и что-то новое о них.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Цитата -->
+    <section class="quote">
+      <div class="container">
+        <blockquote>
+          <p>“Окружай себя людьми, которые делают тебя лучше — и не бойся
+            мечтать о большем.”</p>
+          <cite>— моё настроение</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head">
+          <p class="section__eyebrow">03 — Связь</p>
+          <h2 class="section__title">Давай <span class="accent">знакомиться</span></h2>
+          <p class="section__lead">
+            Напиши мне — буду рада новым знакомствам и сообщениям.
+          </p>
+        </header>
+
+        <div class="contact">
+          <a href="mailto:hello@example.com" class="contact__card">
+            <span class="contact__label">Email</span>
+            <span class="contact__value">hello@example.com</span>
+          </a>
+          <a href="#" class="contact__card">
+            <span class="contact__label">Telegram</span>
+            <span class="contact__value">@username</span>
+          </a>
+          <a href="#" class="contact__card">
+            <span class="contact__label">Instagram</span>
+            <span class="contact__value">@username</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Ульяна. Сделано с любовью.</p>
+      <a href="#home" class="footer__top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
